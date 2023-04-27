@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const defaultApi = axios.create({
-  baseURL: "https://notesappbackend-production.up.railway.app/api/v1",
+  baseURL: "https://notesapp-backend.herokuapp.com/api/v1/notes",
 });
 
 export const sleep = ms => new Promise(resolve => setTimeout(resolve, ms*1000));
