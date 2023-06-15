@@ -15,6 +15,7 @@ export const useNotesMutation = (type,openNotification) => {
         
         onSuccess: (data) => {
             queryClient.invalidateQueries({ queryKey: ['getNotes'] });
+            queryClient.invalidateQueries({ queryKey: ['getCategories'] });
             openNotification();
             
         },
